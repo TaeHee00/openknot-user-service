@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DB_URL = credentials('DB_URL')
-        DB_USERNAME = credentials('DB_USERNAME')
+        DB_USERNAME = credentials('DB_USERNAME'
         DB_PASSWORD = credentials('DB_PASSWORD')
 
         IMAGE_NAME = "openknot-user-service"

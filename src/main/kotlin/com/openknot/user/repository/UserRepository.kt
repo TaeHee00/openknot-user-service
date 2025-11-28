@@ -50,7 +50,7 @@ interface UserRepository : CoroutineCrudRepository<User, UUID> {
             OR u.email LIKE CONCAT('%', :keyword, '%')
         ) AND (
             :skillsCount = 0
-            OR EXISTS (
+            OR EXISTS ( 
                 SELECT 1
                 FROM user_tech_stack uts
                 WHERE uts.user_id = u.id
